@@ -1,0 +1,298 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="./CSS/all.min.css">
+  <!--   bootstrap  -->
+  <link rel="stylesheet" href="./CSS/bootstrap.min.css">
+  <!--   main css  -->
+  <link rel="stylesheet" href="./CSS/main.css">
+  <!-- madiea css -->
+  <link rel="stylesheet" href="./CSS/madiea.css">
+  <!-- img title -->
+  <link rel="icon" href="./img/WhatsApp Image 2022-01-19 at 8.38.43 PM.png">
+
+
+
+  <title>Smart Gate</title>
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg position-fixed w-100">
+    <div class="container flex-row-reverse">
+      <a class="navbar-brand mx-3" href="index.html">
+        <img src="./img/WhatsApp Image 2022-01-19 at 8.38.43 PM.png" alt="navbar image" class="img-fluid">
+      </a>
+      <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fa-solid fa-bars fs-5"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav d-flex flex-lg-row flex-column-reverse col">
+          <div class=" me-lg-auto d-lg-block d-flex flex-column align-items-center">
+            <button class="btn bg-transparent fw-bold border-primary text-primary mb-2 mb-lg-0">عضو جديد</button>
+            <button id="login" class="btn bg-transparent fw-bold border-0 ms-lg-2 mb-lg-0 mb-2">تسجيل الدخول</button>
+          </div>
+          <li class="nav-item mb-2 mb-lg-0">
+            <a class="nav-link text-black-50 fw-bold text-center" href="./index.html#contact">اتصل بنا</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-black-50 fw-bold ms-lg-3 text-center" href="./about.html">من نحن</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-black-50 fw-bold ms-lg-3 text-center" href="./index.html#Seminars">الندوات</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-black-50 fw-bold ms-lg-3 text-center" href="./index.html#sector">قطاعتنا</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-black-50 fw-bold ms-lg-3 text-center" href="./index.html#services">خدماتنا</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-black-50 fw-bold ms-lg-3 text-center" href="./news.html">أخبار</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link fw-bold ms-lg-3 active text-center" href="./index.html#home">الرئيسية</a>
+          </li>
+        </ul>
+      </div>
+      <div class="log-in mt-4 d-none">
+        <div class="card event-register text-end border-0 rounded-4 main-shadow col-11 col-md-7">
+          <div class="card-body">
+            <div class="row align-items-center">
+              <div class="col-6 d-none d-md-block">
+                <img src="assets/images/sing in pic.png" alt="card image" class="img-fluid">
+              </div>
+              <div class="col-12 col-md-6 main">
+                <img src="assets/images/Group 10430.svg" alt="back arrow" class="ms-auto mb-3 arrow-back">
+                <h5 class="card-title fw-bold">تسجيل الدخول</h5>
+                <p class="card-text text-black-50">
+                  من فضلك قم بإدخال البيانات المطلوبة منك لإستكمال تسجيل الدخول ومعرفة الدرجات والتقديرات الخاصة بك في
+                  الجامعة
+                </p>
+                <form class="text-end mb-3" action="">
+                  <div class="position-relative">
+                    <input class="form-control bg-light mb-3" type="number" placeholder="الرقم القومي" required>
+                  </div>
+                  <div class="position-relative">
+                    <input class="form-control bg-light mb-3" type="number" placeholder="الرقم الجامعي" required>
+                  </div>
+                  <input type="submit" class="btn border-0 fw-bold d-flex ms-auto main-btn" value="تسجيل الآن">
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="registeration mt-4 d-none">
+        <div class="card event-register text-end border-0 rounded-4 main-shadow col-11 col-md-7">
+          <div class="card-body">
+            <div class="row align-items-center">
+              <div class="col-6 d-none d-md-block">
+                <img src="assets/images/sing in pic.png" alt="card image" class="img-fluid">
+              </div>
+              <div class="col-12 col-md-6 main">
+                <img src="assets/images/Group 10430.svg" alt="back arrow" class="ms-auto mb-3 arrow-back">
+                <h5 class="card-title fw-bold">الكلية والتخصص</h5>
+                <form class="text-end mb-3" action="">
+                  <select class="form-select bg-light mb-3">
+                    <option selected>اختر الكلية</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                  </select>
+                  <select class="form-select bg-light mb-3">
+                    <option selected>اختر القسم - التخصص</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                  </select>
+                  <div class="position-relative">
+                    <input class="form-control bg-light mb-3" type="number" placeholder="رقم الجلوس" required>
+                  </div>
+                  <input type="submit" class="btn border-0 fw-bold d-flex ms-auto main-btn" value="المتابعة">
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+
+  <section id="news" class="news">
+    <div class="container">
+
+      <div class="row justify-content-around">
+
+        <div class="col-lg-3 col-md-5 col-sm-10">
+
+          <div class="card">
+            <h2>اخبار اخرى</h2>
+            
+              <img src="./img/NoPath - Copy (59).png" alt="">
+            
+            <div class="card-body">
+              <div class="rows">
+                <div class="date">
+                  الأحد ، الموافق 29 / 01 / 2022
+                </div>
+                <div class="image">
+                  <img src="./img/event_black_24dp.png" alt="">
+                </div>
+              </div>
+              <p class="card-text">هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع الفقرات في الصفحة التي يقرأها</p>
+
+            </div>
+          </div>
+
+          <div class="card">
+            <h2>اخبار اخرى</h2>
+            
+              <img src="./img/NoPath - Copy (60).png" alt="">
+            
+            <div class="card-body">
+              <div class="rows">
+                <div class="date">
+                  الأحد ، الموافق 29 / 01 / 2022
+                </div>
+                <div class="image">
+                  <img src="./img/event_black_24dp.png" alt="">
+                </div>
+              </div>
+              <p class="card-text">هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع الفقرات في الصفحة التي يقرأها</p>
+
+            </div>
+          </div>
+
+          <div class="card">
+            <h2>اخبار اخرى</h2>
+            
+              <img src="./img/NoPath - Copy (61).png" alt="">
+            
+            <div class="card-body">
+              <div class="rows">
+                <div class="date">
+                  الأحد ، الموافق 29 / 01 / 2022
+                </div>
+                <div class="image">
+                  <img src="./img/event_black_24dp.png" alt="">
+                </div>
+              </div>
+              <p class="card-text">هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع الفقرات في الصفحة التي يقرأها</p>
+
+            </div>
+          </div>
+
+
+        </div>
+
+
+        <div class="col-lg-8 col-md-6 col-sm-10 text">
+          <div class="card">
+            <img src="./img/NoPath - Copy (57).png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <div class="rows">
+                <div class="date">
+                  الأحد ، الموافق 29 / 01 / 2022
+                </div>
+                <div class="image">
+                  <img src="./img/event_black_24dp.png" alt="">
+                </div>
+              </div>
+              <p class="card-text">هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع الفقرات في الصفحة التي يقرأها. ولذلك يتم استخدام طريقة لوريم إيبسوم لأنها تعطي توزيعاَ طبيعياَ -إلى حد ما- للأحرف عوضاً عن استخدام "هنا يوجد محتوى نصي، هنا يوجد محتوى نصي" فتجعلها تبدو (أي الأحرف) وكأنها نص مقروء. العديد من برامح النشر المكتبي وبرامح تحرير صفحات الويب تستخدم لوريم إيبسوم بشكل إفتراضي كنموذج عن النص، وإذا قمت بإدخال "Lorem Ipsum" في أي محرك بحث ستظهر العديد من المواقع الحديثة العهد في نتائج البحث. على مدى السنين ظهرت نسخ جديدة ومختلفة من نص لوريم إيبسوم، أحياناً عن طريق الصدفة، وأحياناً عن عمد كإدخال بعض العبارات الفكاهية إليها. هنالك العديد من الأنواع المتوفرة لنصوص لوريم إيبسوم، ولكن الغالبية تم تعديلها بشكل ما عبر إدخال بعض النوادر أو الكلمات العشوائية إلى النص. إن كنت تريد أن تستخدم نص لوريم إيبسوم ما، عليك أن تتحقق أولاً أن ليس هناك أي كلمات أو عبارات محرجة أو غير لائقة مخبأة في هذا النص. بينما تعمل جميع مولّدات نصوص لوريم إيبسوم على الإنترنت على إعادة تكرار مقاطع من نص لوريم إيبسوم نفسه عدة مرات بما تتطلبه الحاجة</p>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+
+
+
+    </div>
+  </section>
+
+
+  <footer class="footer">
+    <div class="container">
+
+      <div class="row">
+
+        <div class="col-lg-3 col-md-5 col-sm-10 follow">
+          <h5>تابعنا عبر</h5>
+          <div class="icon">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-youtube"></i>
+          </div>
+          <div class="input-group mb-3 inp">
+            <span class="input-group-text" id="inputGroup-sizing-default">اشترك الان</span>
+            <input type="text" class="form-control" aria-label="Sizing example input"
+              aria-describedby="inputGroup-sizing-default">
+          </div>
+        </div>
+
+
+        <div class="col-lg-3 col-md-5 col-sm-10 contact">
+          <h5>تواصل معنا عبر</h5>
+          <div class="icon">
+            <div>
+              <p>01069673344 <i class="fa-solid fa-mobile-screen"></i> </p>
+            </div>
+            <div>
+              <p>0101522558121 <i class="fa-solid fa-phone"></i> </p>
+            </div>
+            <div>
+              <p>info@smart-gate.net <i class="fa-solid fa-envelope"></i> </p>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-5 col-sm-10 home">
+          <h5><a href="#home">الرئيسية</a></h5>
+          <h5><a href="#services">خدماتنا</a></h5>
+          <h5><a href="#sector">قطاعتنا</a></h5>
+          <h5><a href="#Seminars">الندوات</a></h5>
+          <h5><a href="#">من نحن</a></h4>
+        </div>
+
+
+        <div class="col-lg-3 col-md-5 col-sm-10 image">
+          <img src="./img/WhatsApp Image 2022-01-19 at 8.38.43 PM.png" alt="">
+
+          <div class="rows">
+            <div class="p">
+              <p>عقار رقم 9 شارع حسن افلاطون ارض الجولف – مدينة نصر
+
+              </p>
+            </div>
+            <div class="i">
+              <i class="fa-solid fa-location-dot"></i>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+      <div class="row">
+        <div class="rights d-flex justify-content-center pb-2 pt-4 text-white-50" style="font-size: 10px;">
+          <span>SMART GATE 2021 ©</span>جميع الحقوق محفوظة لدي
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+
+
+  <script src="./JS/bootstrap.bundle.min.js"></script>
+  <script src="./JS/main.js"></script>
+</body>
+
+</html>
